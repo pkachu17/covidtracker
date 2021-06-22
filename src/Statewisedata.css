@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+.window {
+  background: linear-gradient(45deg, #4158d0, #c850c0);
+  height: 100vh;
+  display: flex;
+}
+
+.container-fluid {
+  width: 90%;
+  margin: auto;
+}
+
+.table-responsive {
+  max-height: 550px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  overflow-y: scroll;
+  text-align: center;
+  background-color: white;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.main-heading {
+  background-color: dimgray;
+  color: rgb(248, 252, 252);
+  text-align: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.thead-dark {
+  background-color: rgba(92, 92, 92, 0.185);
+}
+.table {
+  width: 100%;
+  overflow: scroll;
+}
+tr:hover {
+  background-color: rgb(214, 235, 243);
+}
+td,
+th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: none;
+}
+td:hover::after,
+th:hover::after {
+  content: "";
+  position: absolute;
+  background-color: aqua;
+  left: 0;
+  top: -5000px;
+  height: 5000px;
+  width: 100%;
+  z-index: -1;
+}
+.table tr td:hover:nth-child(4) {
+  background-color: rgb(231, 83, 115);
+  color: aliceblue;
+  border: 0.5px solid rgb(12, 12, 12);
+  transition: 0.5s;
+}
+.table tr td:hover {
+  background-color: darkslategray;
+  color: aliceblue;
+  border: 0.5px solid rgb(12, 12, 12);
+  transition: 0.5s;
+}
+.thead-dark {
+  font-weight: bold;
+  text-transform: uppercase;
+}
